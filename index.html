@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QuickNote</h1>
+        <p>A simple note taking app.</p>
+        
+        <div class="form">
+            <input type="text" id="username" placeholder="Username">
+            <textarea id="noteContent" placeholder="Write your note..."></textarea>
+            <button onclick="addNote()">Add Note</button>
+        </div>
+
+        <hr>
+
+        <div class="filter">
+            <input type="text" id="filterUser" placeholder="Filter by username">
+            <button onclick="fetchNotes()">Filter</button>
+        </div>
+
+        <div id="notesContainer">
+            <!-- Notes will be loaded here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
